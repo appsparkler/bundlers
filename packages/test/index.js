@@ -1,3 +1,3 @@
-const r = require('rimraf');
+const chalk = require('rimraf');
 
-console.log(r);
+console.log(chalk);

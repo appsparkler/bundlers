@@ -7,6 +7,6 @@
     "start": "node index"
   },
   "devDependencies": {
-    "chalk": "*"
+    "chalk": "^2.4.2"
   }
 }
