@@ -1,9 +1,8 @@
 {
   "name": "@me/test",
-  "version": "1.0.0",
-  "main": "index.js",
-  "license": "MIT",
+  "version": "0.0.1",
   "main": "./index.js",
+  "license": "MIT",
   "scripts": {
     "start": "node index"
   },

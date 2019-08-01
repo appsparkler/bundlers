@@ -2,7 +2,7 @@
   "name": "@me/rollup",
   "description": "Testing out rollup build tool",
   "license": "MIT",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "scripts": {
     "foo-serve": "yarn foo && serve dist",
     "foo": "rimraf dist && rimraf dist && rollup --config rollup.config.js"
