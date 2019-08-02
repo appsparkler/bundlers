@@ -7,6 +7,12 @@
     "start": "node index"
   },
   "devDependencies": {
-    "chalk": "^2.4.2"
+    "chalk": "^2.4.2",
+    "eslint": "^6.1.0",
+    "eslint-config-google": "^0.13.0",
+    "eslint-plugin-import": "^2.18.2"
+  },
+  "dependencies": {
+    "eslint": "^6.1.0"
   }
 }
