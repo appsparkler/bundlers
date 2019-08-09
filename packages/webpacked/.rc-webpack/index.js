@@ -1,9 +1,10 @@
 const path = require('path');
 const init = require('./init');
+const { NODE_ENV, WEBPACK_OUTPUT_PATH } = require('./env-vars');
+
 init.call({
   startMessage: 'Compiling project bundles now'
 });
-const { NODE_ENV, WEBPACK_OUTPUT_PATH } = process.env;
 
 module.exports = {
   mode: process.env.NODE_ENV,

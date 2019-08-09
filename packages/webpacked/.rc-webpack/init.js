@@ -1,6 +1,5 @@
 module.exports = function() {
-  const { printDescription, setupEnvVariables } = require('./utils');
-  // 
+  const { printDescription } = require('./utils');
+  //
   printDescription.call(this.startMessage);
-  setupEnvVariables.call(null);
 };
