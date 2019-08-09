@@ -7,6 +7,6 @@ exports.printDescription = function() {
   }
 }
 
-function showError() {
+exports.showError = function showError() {
   console.error(this);
 }

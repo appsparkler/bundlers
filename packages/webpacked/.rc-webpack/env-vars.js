@@ -1,3 +1,5 @@
+const { showError } = require('./utils');
+
 setupEnvVariables.call(null);
 
 module.exports = process.env;
