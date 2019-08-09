@@ -5,13 +5,17 @@
   "license": "MIT",
   "scripts": {
     "clean": "rimraf *-dist",
-    "prod": "webpack --mode=production --output-path=prod-dist",
-    "dev": "webpack --mode=development --output-path=dev-dist",
+    "prod": "webpack --mode=production --output-path=prod-dist --config='./.rc-webpack/index.js' ",
+    "dev": "webpack --mode=development --output-path=dev-dist --config='./.rc-webpack/index.js' ",
     "all": "yarn clean && yarn prod && yarn dev"
   },
   "devDependencies": {
     "rimraf": "^2.6.3",
     "webpack": "^4.39.1",
     "webpack-cli": "^3.3.6"
+  },
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "jquery": "^3.4.1"
   }
 }
