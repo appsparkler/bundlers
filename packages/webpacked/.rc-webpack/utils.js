@@ -1,6 +1,7 @@
+const chalk = require('chalk');
+
 exports.printDescription = function() {
   try {
-    const chalk = require('chalk');
     console.log(chalk.blue.bgBlack(this));
   } catch (e) {
     showError.call(e)
@@ -8,5 +9,5 @@ exports.printDescription = function() {
 }
 
 exports.showError = function showError() {
-  console.error(this);
+  console.log(chalk.red.bgBlack(this));
 }
