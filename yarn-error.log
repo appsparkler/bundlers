@@ -1,0 +1,45 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\yarn\bin\yarn.js workspace @me/webpacked add webpack -D
+
+PATH: 
+  C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\Docker\Docker\Resources\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Box\Box Edit\;C:\Users\aakshah\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Users\aakshah\AppData\Local\atom\bin;C:\Program Files\TortoiseGit\bin;C:\Program Files (x86)\Brackets\command;C:\Users\aakshah\.windows-build-tools\python27\;C:\Users\aakshah\AppData\Roaming\nvm\v8.11.3\node_modules\npm\node_modules\npm-lifecycle\node-gyp-bin;C:\Program Files\nodejs\node_modules\windows-build-tools\node_modules\.bin;C:\Program Files\nodejs\node_modules\.bin;C:\Users\aakshah\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\aakshah\bin;C:\Users\aakshah\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_pe
+
+Yarn version: 
+  1.17.3
+
+Node version: 
+  8.12.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  SyntaxError: C:\Users\aakshah\projects\monorepos\build-tools\packages\webpacked\package.json: Unexpected string in JSON at position 188
+      at JSON.parse (<anonymous>)
+      at C:\Users\aakshah\AppData\Roaming\nvm\v8.12.0\node_modules\yarn\lib\cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (C:\Users\aakshah\AppData\Roaming\nvm\v8.12.0\node_modules\yarn\lib\cli.js:304:30)
+      at C:\Users\aakshah\AppData\Roaming\nvm\v8.12.0\node_modules\yarn\lib\cli.js:315:13
+      at <anonymous>
+
+npm manifest: 
+  {
+    "name": "build-tools",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "private": true,
+    "workspaces": [
+      "packages/*"
+    ],
+    "dependencies": {
+      "lerna": "^3.15.0",
+      "chalk": "^2.4.2"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

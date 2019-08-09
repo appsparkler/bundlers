@@ -1,0 +1,17 @@
+{
+  "name": "@me/webpacked",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "clean": "rimraf *-dist",
+    "prod": "webpack --mode=production --output-path=prod-dist",
+    "dev": "webpack --mode=development --output-path=dev-dist",
+    "all": "yarn clean && yarn prod && yarn dev"
+  },
+  "devDependencies": {
+    "rimraf": "^2.6.3",
+    "webpack": "^4.39.1",
+    "webpack-cli": "^3.3.6"
+  }
+}
