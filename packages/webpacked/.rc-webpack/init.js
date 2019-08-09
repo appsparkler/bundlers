@@ -1,5 +1,5 @@
-import { printDescription } from './utils';
 
-export default function() {
+module.exports = function() {
+  const { printDescription } = require('./utils');
   printDescription.call(this.startMessage);
-}
+};

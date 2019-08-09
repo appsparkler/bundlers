@@ -1,11 +1,11 @@
-import path from 'path'
-import init from './init'
+const path = require('path');
+const init = require('./init');
 
 init.call({
   startMessage: 'Compiling project bundles now'
-})
+});
 
-export default {
+module.exports = {
   entry: {
     index: './src/index.js',
   },
@@ -24,4 +24,4 @@ export default {
       }
     }
   }
-}
+};
