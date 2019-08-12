@@ -9,6 +9,7 @@
     "prod": "rimraf dist/prod && cross-env NODE_ENV=production webpack --config='.rc-webpack' ",
     "dev": "rimraf dist/dev && cross-env NODE_ENV=development webpack --config='.rc-webpack' ",
     "dev-server": "serve dist/dev -l 8080",
+    "prod-server": "serve dist/prod -l 8080",
     "all": "yarn clean && yarn prod && yarn dev",
     "all-serve": "yarn all && npm run dev-server"
   },
@@ -23,6 +24,7 @@
     "webpack-cli": "^3.3.6"
   },
   "dependencies": {
+    "@me/rollup": "0.0.1",
     "jquery": "^3.4.1"
   }
 }

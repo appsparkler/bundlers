@@ -1,5 +1,9 @@
 import { Foo } from './Foo'
+import $ from 'jquery'
 
-const BAR = Foo()
+const BAR = {
+  foo: Foo.call('foo'),
+  divsSelectedByRollup: $('div')
+};
 
-export default BAR
+export default BAR;

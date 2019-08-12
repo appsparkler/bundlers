@@ -1,5 +1,4 @@
-import $ from 'jquery';
-import Foo from './wFoo';
+import MeRollup from 'myRollup';
 
-console.log(Foo);
-console.log($);
+console.log('hellow orld...')
+console.log(MeRollup);

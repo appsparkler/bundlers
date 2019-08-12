@@ -1,1 +1,4 @@
-export const Foo = () => console.log('foo')
+export const Foo = function() {
+  console.log(this);
+  return true;
+}
