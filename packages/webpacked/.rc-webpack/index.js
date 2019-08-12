@@ -1,6 +1,7 @@
+// Utils
 const path = require('path');
 const init = require('./init');
-// ENV Variables
+// Variables
 const { NODE_ENV } = process.env;
 const { OUTPUT_PATH } = require('./vars').default;
 // Webpack Configurations
