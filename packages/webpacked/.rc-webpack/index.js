@@ -1,7 +1,8 @@
 const path = require('path');
 const init = require('./init');
 // ENV Variables
-const { NODE_ENV, WEBPACK_OUTPUT_PATH } = require('./env-vars');
+const { NODE_ENV } = process.env;
+const { OUTPUT_PATH } = require('./vars').default;
 // Webpack Configurations
 const plugins = require('./plugins');
 const optimization = require('./optimization');
@@ -17,7 +18,7 @@ module.exports = {
   },
   output: {
     filename: '[name].bundle.js',
-    path: path.resolve(WEBPACK_OUTPUT_PATH)
+    path: path.resolve(OUTPUT_PATH)
   },
   plugins,
   optimization

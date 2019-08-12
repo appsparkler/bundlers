@@ -1,8 +1,11 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-
+const vars = require('./vars');
+console.log(vars);
+const { HTML_PLUGIN } = vars;
 
 module.exports = [
   new HtmlWebpackPlugin({
-    title: 'Webpack & Rollup Bundle Integration'
+    // title: HTML_PLUGIN.title,
+    // template: HTML_PLUGIN.template
   })
 ];

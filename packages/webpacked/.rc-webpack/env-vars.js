@@ -1,8 +1,6 @@
 const { showError } = require('./utils');
 
-setupEnvVariables.call(null);
-
-module.exports = process.env;
+module.exports = setupEnvVariables;
 
 // private functions
 function setupEnvVariables() {
@@ -15,6 +13,7 @@ function setupEnvVariables() {
     require('dotenv').config({
       path: path.resolve(`.env.${NODE_ENV}`)
     });
+    console.log(process.env.WEBPACK_HTML_PLUGIN);
   } catch (e) {
     showError.call(e);
   }
