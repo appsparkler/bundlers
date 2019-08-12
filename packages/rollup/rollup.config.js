@@ -4,6 +4,7 @@ import plugins from './.rollup/plugins/index'
 
 export default [{
   cache: false,
+  external: ['./Bar', './Foo' ],
   input: input.call('src/main.js'),
   output: output.call({
     path: 'dist/bundle.js',
