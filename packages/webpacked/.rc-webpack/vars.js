@@ -2,7 +2,7 @@ const DEVELOPMENT = {
   OUTPUT_PATH: "dist/dev",
   HTML_PLUGIN: {
     "template": "./index.html",
-    "title": "Webpack & Rollup Bundle Integration"
+    "title": "DEV: Webpack & Rollup Bundle Integration"
   }
 };
 
@@ -10,7 +10,7 @@ const PRODUCTION = {
   OUTPUT_PATH: "dist/prod",
   HTML_PLUGIN: {
     "template": "./index.html",
-    "title": "Webpack & Rollup Bundle Integration"
+    "title": "PROD: Webpack & Rollup Bundle Integration"
   }
 };
 
