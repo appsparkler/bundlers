@@ -3,9 +3,13 @@
   "description": "Testing out rollup build tool",
   "license": "MIT",
   "version": "0.0.1",
+  "private": true,
   "scripts": {
-    "foo-serve": "cross-env NODE_ENV=production yarn foo && serve dist",
-    "foo": "rimraf dist && rimraf dist && rollup --config rollup.config.js"
+    "dev": "rimraf dist && rimraf dist && rollup --config rollup.config.js",
+
+    "dev-server": "serve dist -l 8081",
+
+    "all-serve": "cross-env NODE_ENV=production yarn dev && yarn dev-server"
   },
   "devDependencies": {
     "@babel/core": "^7.5.5",

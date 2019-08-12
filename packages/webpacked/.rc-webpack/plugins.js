@@ -5,6 +5,7 @@ const { HTML_PLUGIN } = vars;
 module.exports = [
   new HtmlWebpackPlugin({
     title: HTML_PLUGIN.title,
-    template: HTML_PLUGIN.template
+    template: HTML_PLUGIN.template,
+    inject: 'head'
   })
 ];

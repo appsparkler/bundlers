@@ -1,8 +1,8 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\yarn\bin\yarn.js clean
+  C:\Program Files\nodejs\node.exe C:\Users\aakshah\AppData\Roaming\nvm\v8.11.3\node_modules\yarn\lib\cli.js foo
 
 PATH: 
-  C:\Users\aakshah\AppData\Local\Temp\yarn--1565594329081-0.48637169666560376;C:\Users\aakshah\projects\monorepos\build-tools\packages\webpacked\node_modules\.bin;C:\Users\aakshah\AppData\Local\Yarn\Data\link\node_modules\.bin;C:\Users\aakshah\projects\monorepos\build-tools\node_modules\.bin;C:\Program Files\libexec\lib\node_modules\npm\bin\node-gyp-bin;C:\Program Files\lib\node_modules\npm\bin\node-gyp-bin;C:\Program Files\nodejs\node_modules\npm\bin\node-gyp-bin;C:\Users\aakshah\AppData\Local\Temp\yarn--1565594326205-0.23375546386313384;C:\Users\aakshah\projects\monorepos\build-tools\packages\webpacked\node_modules\.bin;C:\Users\aakshah\AppData\Local\Yarn\Data\link\node_modules\.bin;C:\Users\aakshah\projects\monorepos\build-tools\node_modules\.bin;C:\Users\aakshah\AppData\Local\Yarn\bin;C:\Program Files\libexec\lib\node_modules\npm\bin\node-gyp-bin;C:\Program Files\lib\node_modules\npm\bin\node-gyp-bin;C:\Program Files\nodejs\node_modules\npm\bin\node-gyp-bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\Docker\Docker\Resources\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Box\Box Edit\;C:\Users\aakshah\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Users\aakshah\AppData\Local\atom\bin;C:\Program Files\TortoiseGit\bin;C:\Program Files (x86)\Brackets\command;C:\Users\aakshah\.windows-build-tools\python27\;C:\Users\aakshah\AppData\Roaming\nvm\v8.11.3\node_modules\npm\node_modules\npm-lifecycle\node-gyp-bin;C:\Program Files\nodejs\node_modules\windows-build-tools\node_modules\.bin;C:\Program Files\nodejs\node_modules\.bin;C:\Users\aakshah\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\aakshah\bin;C:\Users\aakshah\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_pe
+  C:\Users\aakshah\AppData\Local\Temp\yarn--1565596671438-0.9266583069051721;C:\Users\aakshah\projects\monorepos\build-tools\packages\rollup\node_modules\.bin;C:\Users\aakshah\AppData\Local\Yarn\Data\link\node_modules\.bin;C:\Users\aakshah\projects\monorepos\build-tools\node_modules\.bin;C:\Program Files\libexec\lib\node_modules\npm\bin\node-gyp-bin;C:\Program Files\lib\node_modules\npm\bin\node-gyp-bin;C:\Program Files\nodejs\node_modules\npm\bin\node-gyp-bin;C:\Users\aakshah\AppData\Local\Temp\yarn--1565596664619-0.5927209870889472;C:\Users\aakshah\projects\monorepos\build-tools\node_modules\.bin;C:\Users\aakshah\AppData\Local\Yarn\Data\link\node_modules\.bin;C:\Users\aakshah\projects\monorepos\build-tools\node_modules\.bin;C:\Users\aakshah\AppData\Local\Yarn\bin;C:\Program Files\libexec\lib\node_modules\npm\bin\node-gyp-bin;C:\Program Files\lib\node_modules\npm\bin\node-gyp-bin;C:\Program Files\nodejs\node_modules\npm\bin\node-gyp-bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\Docker\Docker\Resources\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Box\Box Edit\;C:\Users\aakshah\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Users\aakshah\AppData\Local\atom\bin;C:\Program Files\TortoiseGit\bin;C:\Program Files (x86)\Brackets\command;C:\Users\aakshah\.windows-build-tools\python27\;C:\Users\aakshah\AppData\Roaming\nvm\v8.11.3\node_modules\npm\node_modules\npm-lifecycle\node-gyp-bin;C:\Program Files\nodejs\node_modules\windows-build-tools\node_modules\.bin;C:\Program Files\nodejs\node_modules\.bin;C:\Users\aakshah\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\aakshah\bin;C:\Users\aakshah\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_pe
 
 Yarn version: 
   1.16.0
@@ -28,31 +28,33 @@ Trace:
 
 npm manifest: 
   {
-    "name": "@me/webpacked",
-    "version": "1.0.0",
-    "main": "index.js",
+    "name": "@me/rollup",
+    "description": "Testing out rollup build tool",
     "license": "MIT",
+    "version": "0.0.1",
     "private": true,
     "scripts": {
-      "clean": "rimraf dist",
-      "prod": "cross-env NODE_ENV=production webpack --config='.rc-webpack' ",
-      "dev": "cross-env NODE_ENV=development webpack --config='.rc-webpack' ",
-      "dev-server": "serve dist/dev -l 8080",
-      "all": "yarn clean && yarn prod && yarn dev",
-      "all-serve": "yarn all && npm run dev-server"
+      "foo": "rimraf dist && rimraf dist && rollup --config rollup.config.js",
+  
+      "serve-dist": "serve dist -l 8080",
+  
+      "all-serve": "cross-env NODE_ENV=production yarn foo && yarn serve-dist"
     },
     "devDependencies": {
+      "@babel/core": "^7.5.5",
+      "@babel/preset-env": "^7.5.5",
       "chalk": "^2.4.2",
       "cross-env": "^5.2.0",
-      "dotenv": "^8.0.0",
-      "html-webpack-plugin": "^3.2.0",
       "rimraf": "^2.6.3",
-      "serve": "^11.1.0",
-      "webpack": "^4.39.1",
-      "webpack-cli": "^3.3.6"
+      "rollup": "^1.17.0",
+      "rollup-plugin-babel": "^4.3.3",
+      "rollup-plugin-bundle-html": "^0.2.1",
+      "rollup-plugin-node-resolve": "^5.2.0",
+      "rollup-plugin-peer-deps-external": "^2.2.0",
+      "serve": "^11.1.0"
     },
-    "dependencies": {
-      "jquery": "^3.4.1"
+    "peerDependencies": {
+      "jquery": "3.4.1"
     }
   }
 

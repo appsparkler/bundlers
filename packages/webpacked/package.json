@@ -3,13 +3,14 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "private": true,
   "scripts": {
-    "clean": "rimraf *dist",
-    "prod": "cross-env NODE_ENV=production webpack --config='.rc-webpack' ",
-    "dev": "cross-env NODE_ENV=development webpack --config='.rc-webpack' ",
-    "serve-dev": "serve ./dist/dev",
+    "clean": "rimraf dist",
+    "prod": "rimraf dist/prod && cross-env NODE_ENV=production webpack --config='.rc-webpack' ",
+    "dev": "rimraf dist/dev && cross-env NODE_ENV=development webpack --config='.rc-webpack' ",
+    "dev-server": "serve dist/dev -l 8080",
     "all": "yarn clean && yarn prod && yarn dev",
-    "all-serve": "yarn all && yarn serve-dev"
+    "all-serve": "yarn all && npm run dev-server"
   },
   "devDependencies": {
     "chalk": "^2.4.2",
