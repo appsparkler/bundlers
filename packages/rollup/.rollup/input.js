@@ -1,8 +1,8 @@
-import { resolve } from 'path'
+// import { resolve } from 'path'
 
 export default function() {
   try {
-    return resolve(this);
+    return this;
   } catch (e) {
       console.error(e);
   }

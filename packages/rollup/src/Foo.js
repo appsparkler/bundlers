@@ -1,4 +1,4 @@
 export const Foo = function() {
-  console.log(this);
+  console.log('From Foo : ', this);
   return true;
 }
