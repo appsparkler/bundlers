@@ -1,4 +1,3 @@
-import MeRollup from 'myRollup';
+import MeRollup from '@me/rollup/dist/bundle';
 
-console.log('hellow orld...')
 console.log(MeRollup);
