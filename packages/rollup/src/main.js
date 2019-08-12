@@ -9,4 +9,6 @@ const BAR = {
   divsSelectedByRollup: $('div')
 };
 
+console.log(BAR);
+
 export default BAR;

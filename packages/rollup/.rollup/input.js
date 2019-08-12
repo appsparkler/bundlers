@@ -1,3 +1,9 @@
 import { resolve } from 'path'
 
-export default resolve('src/main.js')
+export default function() {
+  try {
+    return resolve(this);
+  } catch (e) {
+      console.error(e);
+  }
+}

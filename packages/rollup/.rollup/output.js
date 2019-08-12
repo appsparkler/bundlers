@@ -1,8 +1,14 @@
 import { resolve } from 'path'
 
-export default {
-  compact: true,
-  file: resolve('dist/bundle.js'),
-  format: 'umd',
-  name: 'foo'
+export default function() {
+  try {
+    return {
+      compact: true,
+      file: resolve(this.path),
+      format: 'umd',
+      name: this.name
+    }
+  } catch (e) {
+      console.error(e)
+  }
 }

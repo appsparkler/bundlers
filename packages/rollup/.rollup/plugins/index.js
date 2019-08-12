@@ -7,7 +7,7 @@ const PLUGINS = [
     babel,
     resolve,
     html,
-    peerDepsExternal
+    // peerDepsExternal
 ];
 
 export default PLUGINS;
