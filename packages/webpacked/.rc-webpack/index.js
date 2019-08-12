@@ -1,6 +1,8 @@
 const path = require('path');
 const init = require('./init');
 const { NODE_ENV, WEBPACK_OUTPUT_PATH } = require('./env-vars');
+const plugins = require('./plugins');
+const optimization = require('./optimization');
 
 init.call({
   startMessage: 'Compiling project bundles now'
@@ -15,15 +17,6 @@ module.exports = {
     filename: '[name].bundle.js',
     path: path.resolve(WEBPACK_OUTPUT_PATH)
   },
-  optimization: {
-    splitChunks: {
-      cacheGroups: {
-        commons: {
-          test: /[\\/]node_modules[\\/]/,
-          name: 'vendors',
-          chunks: 'all'
-        }
-      }
-    }
-  }
+  plugins,
+  optimization
 };
