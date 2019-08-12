@@ -4,14 +4,9 @@ import plugins from './.rollup/plugins/index'
 
 const external = ['./Foo', './Bar'];
 
-// console.log(output.call({
-//   path: 'dist/bundle.js',
-//   name: 'mainBundle'
-// }))
-
 export default [{
   cache: false,
-  // external,
+  external,
   input: 'src/Foo.js',
   output: output.call({
     path: 'dist/Foo.js',
@@ -32,7 +27,8 @@ export default [{
     }
   }),
   plugins
-},{
+},
+{
   cache: false,
   external,
   input: 'src/main.js',
