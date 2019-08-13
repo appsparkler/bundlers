@@ -6,7 +6,7 @@
   "private": true,
   "main": "dist/bundle.js",
   "scripts": {
-    "dev": "rimraf dist && rimraf dist && rollup --config rollup.config.js",
+    "dev": "rimraf dist && rimraf dist && rollup --config ./.rc-rollup/index.js",
 
     "dev-server": "serve dist -l 8081",
 
