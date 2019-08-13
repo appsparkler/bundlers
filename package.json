@@ -7,7 +7,9 @@
   "scripts": {
     "webpacked-full-build": "yarn workspace @me/webpacked all",
     "webpacked-serve-dev": "yarn workspace @me/webpacked serve-dev",
+    "webpacked-dev": "yarn workspace @me/webpacked prod",
     "webpacked-start": "yarn workspace @me/webpacked prod && yarn workspace @me/webpacked prod-server",
+    "rollup-dev": "yarn workspace @me/rollup dev",
     "rollup-start": "yarn workspace @me/rollup dev && yarn workspace @me/rollup dev-server"
   },
   "workspaces": [

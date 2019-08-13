@@ -1,4 +1,4 @@
-import { resolve } from 'path'
+// import { resolve } from 'path'
 
 
 export default function() {
@@ -7,7 +7,7 @@ export default function() {
       globals: this.globals ? this.globals : undefined,
       compact: true,
       file: this.path,
-      format: 'umd',
+      format: 'cjs',
       name: this.name
     }
   } catch (e) {

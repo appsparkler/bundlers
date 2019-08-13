@@ -1,4 +1,4 @@
-import MeRollup from '@me/rollup/dist/bundle';
+import { Foo, Bar } from '@me/rollup/dist/bundle';
 // import MeRollup from '@me/rollup';
 
 // import string from '@sdp/utils/string'
@@ -14,10 +14,11 @@ import MeRollup from '@me/rollup/dist/bundle';
 
   // @sdp/utils/string
     // - imported by @sdp/utils - interally -
-    // - imported by ./src/components - 
+    // - imported by ./src/components -
 
 
 // rollup-bundle - string, reactLoader
 // webpack-bundle -
 
-console.log(MeRollup);
+console.log(Foo)
+console.log('Bar : ', Bar)

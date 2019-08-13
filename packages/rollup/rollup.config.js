@@ -1,6 +1,7 @@
 import input from './.rollup/input'
 import output from './.rollup/output'
 import plugins from './.rollup/plugins/index'
+import path from 'path'
 
 const external = ['./Foo', './Bar'];
 
@@ -10,7 +11,11 @@ export default [{
   input: 'src/Foo.js',
   output: output.call({
     path: 'dist/Foo.js',
-    name: 'Foo'
+    name: 'Foo',
+    globals: {
+      './Foo': 'Foos',
+      './Bar': 'Bars'
+    }
   }),
   plugins
 },
@@ -23,7 +28,7 @@ export default [{
     path: 'dist/Bar.js',
     name: 'Bar',
     globals: {
-      './Foo': 'Foo'
+      [path.resolve('./src/Foo')]: 'Foos'
     }
   }),
   plugins
@@ -36,8 +41,8 @@ export default [{
     path: 'dist/bundle.js',
     name: 'mainBundle',
     globals: {
-      './Foo': 'Foo',
-      './Bar': 'Bar'
+      [path.resolve('./src/Foo')]: 'Foos',
+      [path.resolve('./src/Bar')]: 'Bars'
     }
   }),
   plugins
