@@ -1,3 +1,3 @@
 module.exports = {
-  './Foo': './Foo'
+  './Foo': 'Foo'
 };
