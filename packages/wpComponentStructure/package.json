@@ -5,10 +5,16 @@
   "license": "MIT",
   "scripts": {
     "clean": "rimraf dist",
-    "build": "webpack --config ./.webpack/index.js",
     "serve": "serve dist",
-    "clean:build": "yarn clean && yarn build",
-    "clean:build:serve": "yarn clean:build && yarn serve"
+    
+    "build-prod": "cross-env NODE_ENV=production webpack --config ./.webpack/index.js",
+    "build-dev": "cross-env NODE_ENV=development webpack --config ./.webpack/index.js",
+
+    "clean:build-dev": "yarn clean && yarn build-dev",
+    "clean:build-prod": "yarn clean && yarn build-prod",
+
+    "clean:build-dev:serve": "yarn clean && yarn build-dev && yarn serve",
+    "clean:build-prod:serve": "yarn clean && yarn build-prod && yarn serve"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.5.5",
@@ -22,6 +28,7 @@
     "webpack-cli": "^3.3.7"
   },
   "dependencies": {
+    "cross-env": "^5.2.1",
     "jquery": "^3.4.1",
     "react": "^16.9.0",
     "react-dom": "^16.9.0"

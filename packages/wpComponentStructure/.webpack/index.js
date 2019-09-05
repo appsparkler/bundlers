@@ -3,10 +3,12 @@ const optimization = require('./optimization');
 const externals = require('./externals');
 const plugins = require('./plugins');
 const output = require('./output');
-const moduleConfig = require('./module')
+const moduleConfig = require('./module');
+require('./setup_dotenv');
 
+console.log(process.env.TEST)
 const webpackConfig = {
-  mode: 'production',
+  mode: process.env.NODE_ENV,
   entry,
   optimization,
   externals,
