@@ -4,11 +4,9 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-
     "clean": "rimraf dist",
     "build": "webpack --config ./.webpack/index.js",
     "serve": "serve dist",
-
     "clean:build": "yarn clean && yarn build",
     "clean:build:serve": "yarn clean:build && yarn serve"
   },
@@ -18,5 +16,10 @@
     "serve": "^11.1.0",
     "webpack": "^4.39.3",
     "webpack-cli": "^3.3.7"
+  },
+  "dependencies": {
+    "jquery": "^3.4.1",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0"
   }
 }

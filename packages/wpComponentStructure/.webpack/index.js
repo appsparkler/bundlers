@@ -9,7 +9,7 @@ console.log(output);
 const webpackConfig = {
   mode: 'development',
   entry,
-  // optimization,
+  optimization,
   externals,
   plugins,
   output
