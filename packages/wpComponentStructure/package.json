@@ -11,6 +11,7 @@
     "clean:build:serve": "yarn clean:build && yarn serve"
   },
   "devDependencies": {
+    "dotenv": "^8.1.0",
     "html-webpack-plugin": "^3.2.0",
     "rimraf": "^3.0.0",
     "serve": "^11.1.0",
