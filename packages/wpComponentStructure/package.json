@@ -4,7 +4,9 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "build": "webpack --config ./.webpack/index.js"
+    "clean": "rimraf dist",
+    "build": "webpack --config ./.webpack/index.js",
+    "clean:build": "yarn clean && yarn build"
   },
   "devDependencies": {
     "rimraf": "^3.0.0",
