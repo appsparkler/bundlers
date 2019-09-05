@@ -3,10 +3,11 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
-  "scripts":{
-    "build": "webpack"
+  "scripts": {
+    "build": "webpack --config ./.webpack/index.js"
   },
-  "dependencies": {
+  "devDependencies": {
+    "rimraf": "^3.0.0",
     "webpack": "^4.39.3",
     "webpack-cli": "^3.3.7"
   }
