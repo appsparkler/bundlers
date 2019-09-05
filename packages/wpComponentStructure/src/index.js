@@ -1,6 +1,8 @@
-import Foo from './Foo'
-import $ from 'jquery'
+import React from 'react';
+import ReactDOM from 'react-dom';
+import FooButton from './Foo'
 
-console.log('hello...');
-console.log(`typeof $ : ${typeof $}`);
-console.log(`Foo : ${Foo}`);
+ReactDOM.render(
+  <FooButton />,
+  document.getElementById('app')
+);

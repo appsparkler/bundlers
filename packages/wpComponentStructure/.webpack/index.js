@@ -3,8 +3,7 @@ const optimization = require('./optimization');
 const externals = require('./externals');
 const plugins = require('./plugins');
 const output = require('./output');
-
-console.log(output);
+const moduleConfig = require('./module')
 
 const webpackConfig = {
   mode: 'development',
@@ -12,7 +11,8 @@ const webpackConfig = {
   optimization,
   externals,
   plugins,
-  output
+  output,
+  module: moduleConfig
 };
 
 console.log(webpackConfig);
