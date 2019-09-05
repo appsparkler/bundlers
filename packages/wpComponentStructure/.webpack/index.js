@@ -6,7 +6,7 @@ const output = require('./output');
 const moduleConfig = require('./module')
 
 const webpackConfig = {
-  mode: 'development',
+  mode: 'production',
   entry,
   optimization,
   externals,
