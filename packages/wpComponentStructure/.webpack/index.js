@@ -1,8 +1,14 @@
 const entry  = require('./entry');
+const optimization = require('./optimization');
+const externals = require('./externals');
+
+console.log(externals);
 
 const webpackConfig = {
   mode: 'development',
-  entry
+  entry,
+  // optimization,
+  externals
 };
 
 console.log(webpackConfig);
