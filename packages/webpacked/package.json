@@ -10,7 +10,7 @@
     "all": "yarn clean && yarn prod && yarn dev"
   },
   "devDependencies": {
-    "rimraf": "^2.6.3",
+    "rimraf": "^3.0.0",
     "webpack": "^4.39.1",
     "webpack-cli": "^3.3.6"
   }
