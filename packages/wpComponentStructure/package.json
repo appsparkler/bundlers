@@ -6,15 +6,13 @@
   "scripts": {
     "clean": "rimraf dist",
     "serve": "serve dist",
-    
     "build-prod": "cross-env NODE_ENV=production webpack --config ./.webpack/index.js",
     "build-dev": "cross-env NODE_ENV=development webpack --config ./.webpack/index.js",
-
     "clean:build-dev": "yarn clean && yarn build-dev",
     "clean:build-prod": "yarn clean && yarn build-prod",
-
     "clean:build-dev:serve": "yarn clean && yarn build-dev && yarn serve",
-    "clean:build-prod:serve": "yarn clean && yarn build-prod && yarn serve"
+    "clean:build-prod:serve": "yarn clean && yarn build-prod && yarn serve",
+    "start": "cross-env NODE_ENV=development webpack-dev-server --open --config ./.webpack"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.5.5",
@@ -25,7 +23,8 @@
     "rimraf": "^3.0.0",
     "serve": "^11.1.0",
     "webpack": "^4.39.3",
-    "webpack-cli": "^3.3.7"
+    "webpack-cli": "^3.3.7",
+    "webpack-dev-server": "^3.8.0"
   },
   "dependencies": {
     "cross-env": "^5.2.1",
