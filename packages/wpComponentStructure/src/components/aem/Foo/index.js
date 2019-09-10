@@ -1,12 +1,13 @@
-import $ from 'jquery';
-
 import React, {
   Component,
 } from 'react';
 import ReactDOM from 'react-dom';
 import PropTypes from 'prop-types';
+//
+import $ from 'jquery';
 
 export default class FooButton extends Component {
+
   constructor(human) {
     super(human);
   }

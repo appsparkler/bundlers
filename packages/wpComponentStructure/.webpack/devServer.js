@@ -1,4 +1,8 @@
 module.exports = {
   contentBase: './dist',
-  hot: true
+  hot: true,
+  overlay: {
+    warnings: true,
+    errors: true
+  }
 };
