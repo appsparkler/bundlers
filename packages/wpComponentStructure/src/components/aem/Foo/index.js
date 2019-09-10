@@ -12,7 +12,7 @@ export default class FooButton extends Component {
   handleClick() {
     try {
       const { buttonTitle } = this.props.content
-      alert(`Yay! It's ${buttonTitle}...`)
+      alert(`Yay! It's ${buttonTitle}..`)
     } catch (e) {
       console.error(e);
     }
@@ -22,7 +22,7 @@ export default class FooButton extends Component {
     return(
       <div>
         <button type = "button" onClick={this.handleClick.bind(this)}>
-          { this.props.content.buttonTitle + '....'}
+          { this.props.content.buttonTitle + 'hello...'}
         </button>
       </div>
     )
