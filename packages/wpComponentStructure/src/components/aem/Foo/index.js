@@ -25,7 +25,7 @@ export default class FooButton extends Component {
     return (
       <div>
         <button type = "button" onClick={this.handleClick.bind(this)}>
-          { this.props.content.buttonTitle + 'hello...'}
+          { this.props.content.buttonTitle }
         </button>
       </div>
     );

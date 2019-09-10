@@ -10,7 +10,7 @@ require('./setup_dotenv');
 //
 const webpackConfig = {
   mode: process.env.NODE_ENV,
-  devtool: 'inline-source-map',
+  devtool: process.env.WEBPACK_DEV_TOOL,
   entry,
   optimization,
   externals,

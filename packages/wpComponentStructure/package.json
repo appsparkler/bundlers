@@ -12,7 +12,6 @@
     "clean:build-prod": "yarn clean && yarn build-prod",
     "clean:build-dev:serve": "yarn clean && yarn build-dev && yarn serve",
     "clean:build-prod:serve": "yarn clean && yarn build-prod && yarn serve",
-
     "start": "cross-env NODE_ENV=development webpack-dev-server --open --config ./.webpack"
   },
   "devDependencies": {
@@ -33,6 +32,7 @@
     "jquery": "^3.4.1",
     "prop-types": "^15.7.2",
     "react": "^16.9.0",
-    "react-dom": "^16.9.0"
+    "react-dom": "^16.9.0",
+    "touch-cli": "0.0.1"
   }
 }
