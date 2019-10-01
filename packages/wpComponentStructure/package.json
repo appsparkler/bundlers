@@ -6,7 +6,9 @@
   "scripts": {
     "clean": "rimraf dist",
     "serve": "serve dist",
-    "build-prod": "cross-env NODE_ENV=production webpack --config ./.webpack/index.js",
+    "setup-dotenv-prod": "node ./scripts/setup_dotenv.js --test",
+    "setup-dotenv-dev": "cross-env NODE_ENV=development node ./scripts/setup_dotenv.js",
+    "build-prod": "yarn setup-dotenv-prod && NODE_ENV=production webpack --config ./.webpack/index.js",
     "build-dev": "cross-env NODE_ENV=development webpack --config ./.webpack/index.js",
     "clean:build-dev": "yarn clean && yarn build-dev",
     "clean:build-prod": "yarn clean && yarn build-prod",
@@ -25,7 +27,7 @@
     "serve": "^11.1.0",
     "webpack": "^4.39.3",
     "webpack-cli": "^3.3.7",
-    "webpack-dev-server": "^3.8.0"
+    "webpack-dev-server": "^3.8.0
   },
   "dependencies": {
     "cross-env": "^5.2.1",
